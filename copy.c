@@ -29,12 +29,8 @@ int main(void)
         return 1;
     }
 
-    for (int i = 0, n = strlen(s); i <= n; i++)
-    {
-        t[i] = s[i];
-        //*(t+i) = *(s+i)
-    }
-    // adding check of user input
+    strcpy(t, s);
+
     if (strlen(t) > 0)
     {
         t[0] = toupper(t[0]);
