@@ -40,4 +40,7 @@ int main(void)
     printf("s: %s\n", s);
     printf("t: %s\n", t);
 
+    // returnig the memory back to system
+    free(t);
+
 }
